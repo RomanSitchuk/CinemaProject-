@@ -82,8 +82,8 @@ public class Seance implements Comparable<Seance> {
 
 	@Override
 	public String toString() {
-		return "Сеанс [Фільм : " + movie + ", Початок : " + startTime
-				+ ", Кінець = " + endTime;
+		return "РЎРµР°РЅСЃ [Р¤С–Р»СЊРј  : " + movie + ", РџРѕС‡Р°С‚РѕРє : " + startTime
+				+ ", РљС–РЅРµС†СЊ  = " + endTime;
 	}
 
 	@Override

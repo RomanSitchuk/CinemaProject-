@@ -60,7 +60,7 @@ public class Movie {
 
 	@Override
 	public String toString() {
-		return "Назва = " + title + ", Тривалість фільму = " + duration ;
+		return "РќР°Р·РІР° = " + title + ", РўСЂРёРІР°Р»С–СЃС‚СЊ С„С–Р»СЊРјСѓ  = " + duration ;
 	}
 	
 	

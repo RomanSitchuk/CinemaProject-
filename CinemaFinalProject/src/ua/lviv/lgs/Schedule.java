@@ -36,7 +36,7 @@ public class Schedule {
 	public String toString() {
 		String s = "";
 		if (set.isEmpty()) {
-			System.out.println("~~~ Немає нових фільмів у розкладі ~~~");
+			System.out.println("~~~ РќРµРјР°С” РЅРѕРІРёС… С„С–Р»СЊРјС–РІ Сѓ СЂРѕР·РєР»Р°РґС– ~~~");
 		} else {
 			Iterator<Seance> iter = set.iterator();
 

@@ -18,98 +18,98 @@ public class Main {
                 case 1:
                     
                     Scanner addC = new Scanner(System.in);
-                    System.out.println("Введіть назву фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РЅР°Р·РІСѓ С„С–Р»СЊРјСѓ :");
                     String titleCin = addC.nextLine();
-                    System.out.println("Введіть тривалість у годинах фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ С‚СЂРёРІР°Р»С–СЃС‚СЊ С„С–Р»СЊРјСѓ Сѓ РіРѕРґРёРЅР°С… :");
                     int durationCinH = addC.nextInt();
-                    System.out.println("Введіть тривалість у хвилинах фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ С‚СЂРёРІР°Р»С–СЃС‚СЊ С„С–Р»СЊРјСѓ Сѓ С…РІРёР»РёРЅР°С… :");
                     int durationCinM = addC.nextInt();
                   
                     	Scanner check = new Scanner (System.in);
-                        System.out.println("Введіть кількість сеансів (максимум 3)");
+                        System.out.println("Р’РІРµРґС–С‚СЊ РєС–Р»СЊРєС–СЃС‚СЊ СЃРµР°РЅСЃС–РІ(РјР°РєСЃРёРјСѓРј 3)");
                         int keyCheck = check.nextInt();
                         switch (keyCheck)
                         {
                             case 1:
                                 Scanner addMultSeances = new Scanner (System.in);
-                                System.out.println("Введіть годину початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ РіРѕРґРёРЅСѓ РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 int startH1 = addMultSeances.nextInt();
-                                System.out.println("Введіть  хвилини початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ С…РІРёР»РёРЅРё РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 int startM1 = addMultSeances.nextInt();
                                 palace.addMovie(new Movie (titleCin, new Time(durationCinH,durationCinM)), new Time(startH1, startM1));
                                 break;
                             case 2:
                                 addMultSeances = new Scanner (System.in);
-                                System.out.println("Введіть годину початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ РіРѕРґРёРЅСѓ РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 startH1 = addMultSeances.nextInt();
-                                System.out.println("Введіть  хвилини початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ С…РІРёР»РёРЅРё РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 startM1 = addMultSeances.nextInt();
-                                System.out.println("Введіть годину початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ РіРѕРґРёРЅСѓ РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 int startH2 = addMultSeances.nextInt();
-                                System.out.println("Введіть  хвилини початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ С…РІРёР»РёРЅРё РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 int startM2 = addMultSeances.nextInt();
                                 palace.addMovie(new Movie (titleCin, new Time(durationCinH,durationCinM)), new Time(startH1, startM1), new Time(startH2,startM2));
                                 break;
                             case 3:
                             	addMultSeances = new Scanner (System.in);
-                            	 System.out.println("Введіть годину початку фільму :");
+                            	 System.out.println("Р’РІРµРґС–С‚СЊ РіРѕРґРёРЅСѓ РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 startH1 = addMultSeances.nextInt();
-                                System.out.println("Введіть  хвилини початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ С…РІРёР»РёРЅРё РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 startM1 = addMultSeances.nextInt();
-                                System.out.println("Введіть годину початку фільму :");
+                                System.out.println("Р’РІРµРґС–С‚СЊ РіРѕРґРёРЅСѓ РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                  startH2 = addMultSeances.nextInt();
-                                 System.out.println("Введіть  хвилини початку фільму :");
+                                 System.out.println("Р’РІРµРґС–С‚СЊ С…РІРёР»РёРЅРё РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                  startM2 = addMultSeances.nextInt();
-                                 System.out.println("Введіть годину початку фільму :");
+                                 System.out.println("Р’РІРµРґС–С‚СЊ РіРѕРґРёРЅСѓ РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                  int startH3 = addMultSeances.nextInt();
-                                 System.out.println("Введіть  хвилини початку фільму :");
+                                 System.out.println("Р’РІРµРґС–С‚СЊ С…РІРёР»РёРЅРё РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                                 int startM3 = addMultSeances.nextInt();
                                 palace.addMovie(new Movie (titleCin, new Time(durationCinH,durationCinM)), new Time(startH1, startM1), new Time(startH2,startM2), new Time(startH3,startM3));
                                 break;
                          
                             default:
-                                System.out.println("Введіть 1, 2 або 3!");
+                                System.out.println("Р’РІРµРґС–С‚СЊ 1, 2 Р°Р±Рѕ 3!");
                                break;
                         }
                     break;
                  
                 case 2:
                     Scanner addSeance = new Scanner (System.in);
-                    System.out.println("Введіть день, в який додаємо сеанс : ");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РґРµРЅСЊ, РІ СЏРєРёР№ РґРѕРґР°С”РјРѕ СЃРµР°РЅСЃ : ");
                     String day = addSeance.nextLine();
-                    System.out.println("Введіть назву фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РЅР°Р·РІСѓ С„С–Р»СЊРјСѓ  :");
                     titleCin = addSeance.nextLine();
-                    System.out.println("Введіть тривалість годин фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ С‚СЂРёРІР°Р»С–СЃС‚СЊ РіРѕРґРёРЅ С„С–Р»СЊРјСѓ :");
                     durationCinH = addSeance.nextInt();
-                    System.out.println("Введіть тривалість хвилин фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РєС–Р»СЊРєС–СЃС‚СЊ С…РІРёР»РёРЅ С„С–Р»СЊРјСѓ :");
                     durationCinM = addSeance.nextInt();
-                    System.out.println("Введіть  годину початку  фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ  РіРѕРґРёРЅСѓ РїРѕС‡Р°С‚РєСѓ  С„С–Р»СЊРјСѓ:");
                     int seanceH = addSeance.nextInt();
-                    System.out.println("Введіть хвилини початку фільму :");
+                    System.out.println("Р’РІРµРґС–С‚СЊ С…РІРёР»РёРЅРё РїРѕС‡Р°С‚РєСѓ С„С–Р»СЊРјСѓ :");
                     int seanceM = addSeance.nextInt();
                     palace.addSeance(day, new Seance(new Movie(titleCin, new Time(durationCinH, durationCinM)), new Time(seanceH, seanceM)));
                     break;
    
                 case 3:
                     Scanner remove = new Scanner (System.in);
-                    System.out.println("Введіть назву фільму  для його видалення з розкладу:");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РЅР°Р·РІСѓ С„С–Р»СЊРјСѓ  РґР»СЏ Р№РѕРіРѕ РІРёРґР°Р»РµРЅРЅСЏ Р· СЂРѕР·РєР»Р°РґСѓ:");
                     titleCin = remove.nextLine();
                     palace.removeMovie(titleCin);
                     break;
                     
                 case 4:
-                    System.out.println("Введіть день сеансу для його видаленя з розкладу:");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РґРµРЅСЊ СЃРµР°РЅСЃСѓ РґР»СЏ Р№РѕРіРѕ РІРёРґР°Р»РµРЅСЏ Р· СЂРѕР·РєР»Р°РґСѓ:");
                     Scanner removeS = new Scanner(System.in);
                     day = removeS.nextLine();
-                    System.out.println("Введіть  назву фільма сеансу для його видаленя з розкладу:");
+                    System.out.println("Р’РІРµРґС–С‚СЊ  РЅР°Р·РІСѓ С„С–Р»СЊРјР° СЃРµР°РЅСЃСѓ РґР»СЏ Р№РѕРіРѕ РІРёРґР°Р»РµРЅСЏ Р· СЂРѕР·РєР»Р°РґСѓ:");
                     titleCin = removeS.nextLine();
-                    System.out.println("Введіть тривалість фільму у годинах для  видаленя сеансу з розкладу:");
+                    System.out.println("Р’РІРµРґС–С‚СЊ С‚СЂРёРІР°Р»С–СЃС‚СЊ С„С–Р»СЊРјСѓ Сѓ РіРѕРґРёРЅР°С… РґР»СЏ  РІРёРґР°Р»РµРЅСЏ СЃРµР°РЅСЃСѓ Р· СЂРѕР·РєР»Р°РґСѓ:");
                     durationCinH = removeS.nextInt();
-                    System.out.println("Введіть тривалість фільму у хвилинах для  видаленя сеансу з розкладу:");
+                    System.out.println("Р’РІРµРґС–С‚СЊ С‚СЂРёРІР°Р»С–СЃС‚СЊ С„С–Р»СЊРјСѓ Сѓ С…РІРёР»РёРЅР°С… РґР»СЏ  РІРёРґР°Р»РµРЅСЏ СЃРµР°РЅСЃСѓ Р· СЂРѕР·РєР»Р°РґСѓ:");
                     durationCinM = removeS.nextInt();
-                    System.out.println("Введіть початок фільму у годинах для  видаленя сеансу з розкладу:");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РїРѕС‡Р°С‚РѕРє С„С–Р»СЊРјСѓ Сѓ РіРѕРґРёРЅР°С… РґР»СЏ  РІРёРґР°Р»РµРЅСЏ СЃРµР°РЅСЃСѓ Р· СЂРѕР·РєР»Р°РґСѓ:");
                     seanceH = removeS.nextInt(); 
-                    System.out.println("Введіть початок фільму у хвилинах для  видаленя сеансу з розкладу:");
+                    System.out.println("Р’РІРµРґС–С‚СЊ РїРѕС‡Р°С‚РѕРє С„С–Р»СЊРјСѓ Сѓ С…РІРёР»РёРЅР°С… РґР»СЏ  РІРёРґР°Р»РµРЅСЏ СЃРµР°РЅСЃСѓ Р· СЂРѕР·РєР»Р°РґСѓ:");
                     seanceM = removeS.nextInt();
                     palace.removeSeance(day, new Seance(new Movie(titleCin, new Time(durationCinH, durationCinM)), new Time(seanceH, seanceM)));
                     break;
@@ -120,7 +120,7 @@ public class Main {
                     palace.addMovie(new Movie("Chappie", new Time (2,12)), new Time(9, 10));
                     palace.addMovie(new Movie("Lion King", new Time (1,36)), new Time(14, 50), new Time (16,0), new Time (8,30));
                     palace.addMovie(new Movie("Hobbit 2", new Time (2,48)), new Time(12, 45), new Time (22,15));
-                    System.out.println("Улюблені фільми додано!");
+                    System.out.println("РЈР»СЋР±Р»РµРЅС– С„С–Р»СЊРјРё РґРѕРґР°РЅРѕ!");
                     break;
                     
                 case 6:
@@ -138,12 +138,12 @@ public class Main {
     public static void ShowMenu ()
     {
         System.out.println();
-        System.out.println("1.Додати фільм разом зі сеансами до розкладу");
-        System.out.println("2.Додати сеанс до розкладу");
-        System.out.println("3.Видалити фільм зі списку");
-        System.out.println("4.Видалити сеанс");
-        System.out.println("5.Заповнити розклад улюбленими фільмами і ловити кайф!");
-        System.out.println("6.Вивести розклад на екран");
+        System.out.println("1.Р”РѕРґР°С‚Рё С„С–Р»СЊРј СЂР°Р·РѕРј Р·С– СЃРµР°РЅСЃР°РјРё РґРѕ СЂРѕР·РєР»Р°РґСѓ");
+        System.out.println("2.Р”РѕРґР°С‚Рё СЃРµР°РЅСЃ РґРѕ СЂРѕР·РєР»Р°РґСѓ");
+        System.out.println("3.Р’РёРґР°Р»РёС‚Рё С„С–Р»СЊРј Р·С– СЃРїРёСЃРєСѓ");
+        System.out.println("4.Р’РёРґР°Р»РёС‚Рё СЃРµР°РЅСЃ");
+        System.out.println("5.Р—Р°РїРѕРІРЅРёС‚Рё СЂРѕР·РєР»Р°Рґ СѓР»СЋР±Р»РµРЅРёРјРё С„С–Р»СЊРјР°РјРё");
+        System.out.println("6.Р’РёРІРµСЃС‚Рё СЂРѕР·РєР»Р°Рґ РЅР° РµРєСЂР°РЅ");
         System.out.println("0.Exit");
     
         
